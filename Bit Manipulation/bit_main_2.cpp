@@ -3,7 +3,7 @@
 // program to check if a number is power of 2
 #include<bits/stdc++.h>
 using namespace std;
-
+// lskd
 // now in binary rep. every number which is a power of 2
 // must be having only 1 bit as set. eg: 8 is 1000, 4 is 0100, 2 is 0010 and so on
 // also if we see n-1 of any number then:
