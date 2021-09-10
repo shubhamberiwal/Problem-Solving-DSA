@@ -67,6 +67,7 @@ void selection_sort(int arr[], int n)
     }
 }
 
+// mysql commands:
 // select ename from emp where desig in (select desig from emp where empname = 'Arun')
 // select ename from emp where sal in (select sal from emp where max(sal))
 // select ename from emp where sal in (select max(sal) from emp);
