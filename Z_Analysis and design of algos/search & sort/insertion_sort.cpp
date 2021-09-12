@@ -1,3 +1,11 @@
+/*Implement the following Sort algorithms to sort a given set ofelements and determine the time
+required to sort the elements. Repeat the experiment fordifferent values of n, the number of
+elements in the list to be sorted and plot a graph of thetime taken versus n. The elements can be
+read from a file or can be generated using therandom number gene rator.
+        Analyze the time efficiency of each of these methods and compare their performances by
+        referring the graphs plotted.
+INSERTION SORT;
+*/
 
 
 #include <bits/stdc++.h>
@@ -54,3 +62,25 @@ void insertion_sort(int arr[], int n)
         arr[j + 1] = key;
     }
 }
+
+
+// void insertion_sort(int arr[], int n)
+// {
+//     int i, key, j;
+//     for (i = 1; i < n; i++)
+//     {
+//         key = arr[i];
+//         j = i - 1;
+ 
+//         /* Move elements of arr[0..i-1], that are
+//         greater than key, to one position ahead
+//         of their current position */
+//         while (j >= 0 && arr[j] > key)
+//         {
+//             arr[j + 1] = arr[j];
+//             j = j - 1;
+//         }
+//         arr[j + 1] = key;
+//     }
+// }
+
