@@ -157,7 +157,7 @@ int main()
     // b->next->next->next = a->next; // b becomes: 9->2->0->4->5, this is for intersection problem
     linked ob;
     listnode* temp = ob.intersect(a,b);
-    ob.printlist(res);
+    ob.printlist(temp);
     
     return 0;
 }
