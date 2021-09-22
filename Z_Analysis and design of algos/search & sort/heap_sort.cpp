@@ -1,6 +1,5 @@
 /*
 Implement Heap Sort
-Shubham Beriwala - 4ni19is0
 */
 
 #include <stdio.h>

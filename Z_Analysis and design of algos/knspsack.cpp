@@ -1,7 +1,6 @@
 
 /*
 Implement 0/1 Knapsack problem using dynamic programming.Analyze its time efficiency
-Shubham Beriwala - 4NI19IS097
 
 */
 #include <bits/stdc++.h>
