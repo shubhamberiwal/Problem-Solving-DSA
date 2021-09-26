@@ -2,7 +2,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// Reverse Order
 
 // count the number of factors or check for primes
 // now if you use condition sqrt(n) then the time complexity is not O(sqrt(n))

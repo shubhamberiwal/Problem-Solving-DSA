@@ -17,6 +17,17 @@ void primefactorization(int n){
     }
 }
 // this works because every number has a prime factorization that is <= sqrt(n)
+// and at max only 1 prime factor can be greater than sqrt(n) and for that we 
+//have placed the condition at the end
+// .......
+// for every number 'n' there is only 1 prime factor that is greater than sqrt(n)
+// lets prove it by contradiction. Suppose there are 2 number p and q that
+// are greater than sqrt(n) and are prime factors of n then p*q should also
+// be a factor of n right? but it isn't because p and q both were greater than
+// sqrt(n) then their multiplication must be greater than n which is not possible.
+// hence we can safely conclude than at max a number can have only 1 prime factor
+// that is greater than sqrt(n)
+
 void primefactorization(int n){
     for (int i = 2; i*i <= n; i++)
     {
