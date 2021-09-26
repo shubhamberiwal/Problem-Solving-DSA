@@ -19,9 +19,9 @@ void create_sieve(){
         sieve[i] = true;
     }
     
-    for (int i = 2; i*i <= N; i++){
-        if(sieve[i]==true){
-            for (int j = i*i; j <= N; j++){
+    for (int i = 2; i*i <= N; i++) {
+        if(sieve[i]==true) {
+            for (int j = i*i; j <= N; j++) {
                 sieve[j] = false;
             }
         }
@@ -66,7 +66,7 @@ int main(){
             int firstmultiple = (l/pr)*pr;
             if( firstmultiple<l) firstmultiple+=pr;
 
-            for (int j = max(firstmultiple, pr*pr); j  <= r; j+=pr)            {
+            for (int j = max(firstmultiple, pr*pr); j  <= r; j+=pr) {
                 dummy[j-l] = 0;
             }
             
