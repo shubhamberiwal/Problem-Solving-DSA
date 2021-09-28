@@ -12,7 +12,7 @@ struct matrix {
         mat.assign(a,vi(a,0));
     }
     // for identity matrix, char c as 'I' for identity
-    matrix(int a, char c) {
+    matrix(int a, char c)  {
         if(c=='I') {
             mat.assign(a,vi(a,0));
             for (int i = 0; i < a; i++) {
@@ -25,11 +25,11 @@ struct matrix {
 };
 
 // Basic multiplication of 2 matrices
-matrix multiplication_matrix(matrix A, matrix B, int dim){
+matrix multiplication_matrix(matrix A, matrix B, int dim) {
     matrix C(dim);
-    for (int row = 0; row < dim; row++){
-        for (int col = 0; col < dim; col++){
-            for (int i = 0; i < dim; i++){
+    for (int row = 0; row < dim; row++) {
+        for (int col = 0; col < dim; col++) {
+            for (int i = 0; i < dim; i++) {
                 C.mat[row][col] += (A.mat[row][i] * B.mat[i][col]);
             }
         }
@@ -38,7 +38,7 @@ matrix multiplication_matrix(matrix A, matrix B, int dim){
 }
 
 // iterative way
-matrix matrix_expo(matrix A, int power, int dim){
+matrix matrix_expo(matrix A, int power, int dim) {
     
     // binary exponentiation method will take O(dim^3 * log (power)) time
     // note that a matrix A multiplied with identity matrix I gives matrix A as it is.
